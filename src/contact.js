@@ -1,0 +1,135 @@
+import React, { Component } from "react";
+ 
+class Contact extends Component {
+  render() {
+    return (
+      <div>
+        <div id="contactus" class="page multipage">
+		<div class="container">	
+				<div class="title">
+                    <center><a href="ContactUs.php" target="_blank"><img src="images/Pin.png" alt=""  /></a></center>
+                    <center>
+                          <span class="highlight">LOCATE US</span>
+                    </center>
+				  <a href="ContactUs.php" target="_blank"><h1 onmouseover="this.style.backgroundColor='#30302e'" onmouseout="this.style.backgroundColor=''">Contact Us</h1></a>
+                  <div class="subtitle">
+                      <p>We'd really love to <span class="highlight">hear from you</span> so why not drop us an email and <span class="highlight">we'll get back</span> to you as soon as we finish our <span class="highlight">coffee</span>.</p>
+                      { /*<img src="images/Sections/ContactUs.jpg" title="" alt="" style="border:5px solid #fed404" />*/ }
+                  </div>{ /* END SUBTITLE */ }
+                </div>{ /* END TITLE */ }  	                             
+          </div>{ /* END CONTAINER */ }         
+		<div class="container clearfix">
+			<div class="sixteen columns">
+				
+	   { /* START CONTACT BOX */ }
+      <div class="contact-box">
+        { /* START CONTACT FORM */ }
+         <div id="contact-form">			
+            <form action="contact.php" method="post">
+                <div id="contact-input">
+                 { /*[if IE]>
+                    <label for="name">Name</label>
+                <![endif]*/ }
+                  <input type="text" name="name" id="name" placeholder="Name (required)" />
+                   { /*[if IE]>
+                   		<label for="email">Email</label>
+                    <![endif]*/ }
+                  <input type="text" name="email" id="email" placeholder="Email (required)" />
+                   { /*[if IE]>
+                   		<label for="subject">Subject</label>
+                    <![endif]*/ }
+                  <input type="text" name="subject" id="subject" placeholder="Subject (required)" />
+                    <input type="text" name="phone" id="phone" placeholder="Phone (required)" />
+                </div>
+                <div id="contact-textarea">
+                 { /*[if IE]>
+                   		<label for="message">Your Message Here</label>
+                    <![endif]*/ }
+                  <textarea name="message" id="message" cols="39" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <div id="contact-submit">
+                  <div>
+                    <input name="submit" type="submit" id="submit" tabindex="5" value="Post Comment" class="comment-submit small button" />
+                  </div>
+                </div>
+              </form> 
+         <div class="clear"></div>
+          </div>
+           <div class="result"></div>  
+		</div>
+        { /* END CONTACT BOX */ }
+		</div> { /* END SIXTEEN COLUMNS */ }        
+	</div>{ /* END CONTAINER */ }
+	{ /* END CONTACT US SECTION */ }
+	
+      { /* START COPYRIGHT SECTION */ }           
+        <div class="copyright">
+     <div class="container clearfix">
+        <div class="sixteen columns">
+        { /*<div class="copyright-logo"><a href="#"><img src="images/logo1.png" title="logo" alt="logo" /></a></div>*/ }   
+           <div class="social-icons">
+            <div class="social-icon social-email"><a href="mailto:info@yellospot.com">Email</a></div>
+              <div class="social-icon social-facebook"><a href="https://www.facebook.com/pages/YelloSpot/645947028872274?ref=hl" target="_blank" data-original-title="Facebook">Facebook</a></div>
+              <div class="social-icon social-twitter"><a href="https://twitter.com/YelloSpot" target="_blank" data-original-title="Twitter">Twitter</a></div>
+              <div class="social-icon social-instagram"><a href="https://instagram.com/yellospot/" target="_blank" data-original-title="Instagram">Instagram</a></div>
+               <div class="social-icon social-linkedin"><a href="https://www.linkedin.com/company/yellospot?trk=biz-companies-cym" target="_blank" data-original-title="LinkedIn">LinkedIn</a></div>
+               <div class="social-icon social-googleplus"><a href="https://plus.google.com/u/0/b/107067166167165746556/107067166167165746556/" rel="publisher" target="_blank" data-original-title="Google+">Google+</a></div>
+           </div>
+           </div>
+         
+         
+         { /* ADDRESSES SECTION */ }	
+<div class="fullwidth grey">
+                <div class="one-third column">
+                  <div class="service-features">
+                 <p><strong>LEBANON</strong><br />
+             <strong>Tel / Fax:</strong> + 961 9 911 467, + 961 9 911 468<br />
+              <strong>Email Address:</strong> info@YelloSpot.com<br />
+            <strong>Address:</strong> Office 31, 4th Floor, City Center Bldg.,<br />
+                     New Str., Ghadir, Jounieh, <strong>Lebanon</strong></p>     
+            { /* END OF TOGGLE */ }
+                  </div>               
+                </div>{ /* END ONE THIRD COLUMN */ }
+                
+                <div class="one-third column">
+                  <div class="service-features">
+                  <p><strong>EGYPT</strong><br />
+                 <strong>Tel / Fax:</strong> + 20 1027333125<br />
+              <strong>Email Address:</strong> egypt@YelloSpot.com<br />
+            <strong>Address:</strong> 140B, Hadayek El Ahram, Kafr Nassar,<br />
+            Al Ahram, Giza, <strong>Egypt</strong></p>
+             
+            { /* END OF TOGGLE */ }
+                  </div>               
+               
+                </div>{ /* END ONE THIRD COLUMNS */ }   
+                
+                <div class="one-third column">
+                  <div class="service-features">
+                  <p><strong>GREECE</strong><br />
+             <strong>Tel / Fax:</strong> + 30 6945352152<br />
+              <strong>Email Address:</strong> greece@YelloSpot.com<br />
+            <strong>Address:</strong> 5th Floor, Aki Miaouli 71, Piraeus, <strong>Greece</strong></p>
+           </div>
+            { /* END OF TOGGLE */ }
+                  </div>               
+                </div>{ /* END ONE THIRD COLUMNS */ }
+    </div>
+	  { /* End Addresses Section */ }
+       <br />
+         <div class="sixteen columns" align="center">
+             <p align="center"><strong><a href="TermsConditions.php" target="_blank">Terms & Conditions</a>&nbsp; l &nbsp; <a href="PrivacyPolicy.php" target="_blank">Privacy Policy l &nbsp;</a> <a href="sitemap.php" target="_self">Sitemap</a></strong><br />
+            2016 All Rights Reserved. YelloSpot s.a.r.l    
+            </p>
+             </div>
+
+         
+         </div> { /* END SIXTEEN COLUMNS */ }        
+	  </div>{ /* END CONTAINER */ }
+    
+      </div>
+    );
+  }
+}
+ 
+export default Contact;
