@@ -14,7 +14,9 @@ class WhatWeDo extends Component {
               <div className="one-third column">
                   <div className="service-features">
                     <div className="img-container">
-                      <a href="WhatWeDo.php" target="_blank"><img src={require("./images/icons/icons/copyright.png")} title="" alt="Service Features" /></a>
+                      <a href="WhatWeDo.php">
+                        <img src={require("./images/icons/icons/copyright.png")} title="" alt="Service Features" />
+                      </a>
                     </div>
                     <h3 className="font-weight-bold">Creative</h3>                    
                     <div className="toggle">
@@ -33,7 +35,9 @@ class WhatWeDo extends Component {
                 <div className="one-third column">
                   <div className="service-features">
                     <div className="img-container">
-                      <a href="WhatWeDo.php" target="_blank"><img src={require("./images/icons/icons/copyright.png")} title="" alt="Service Features" /></a>
+                      <a href="WhatWeDo.php">
+                        <img src={require("./images/icons/icons/organic.png")} title="" alt="Service Features" />
+                      </a>
                     </div>
                     <h3 className="font-weight-bold">Organic</h3>                    
                     <div className="toggle">
@@ -52,7 +56,9 @@ class WhatWeDo extends Component {
                 <div className="one-third column">
                   <div className="service-features">
                     <div className="img-container">
-                      <a href="WhatWeDo.php" target="_blank"><img src={require("./images/icons/icons/copyright.png")} title="" alt="Service Features" /></a>
+                      <a href="WhatWeDo.php">
+                        <img src={require("./images/icons/icons/Paid.png")} title="" alt="Service Features" />
+                      </a>
                     </div>
                     <h3 className="font-weight-bold">Paid</h3>                    
                     <div className="toggle">
@@ -82,7 +88,7 @@ class WhatWeDo extends Component {
                     <p className="twitter-feed-icon">
                     <i className="icon-twitter"></i>
                     </p>
-                    <p className="twitter-author"><a href="http://twitter.com/'envato'" target="_blank">Envato</a></p></div>
+                    <p className="twitter-author"><a href="http://twitter.com/'envato'">Envato</a></p></div>
                     <div className="twitter-slider">              
                       <div id="twitter-feed"></div>  
                     </div>

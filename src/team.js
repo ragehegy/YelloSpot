@@ -16,7 +16,7 @@ class Team extends Component {
               </div>
             </div>
           </div>
-          <div className="bg-dark py-4">  
+          <div className="pt-4" style={{background: "#2d2d2d"}}>  
             <div className="fancy-header2">       
               <h4>Who are we anyway?</h4>
               <h2 className="highlight">Meet the team who built the dream</h2>

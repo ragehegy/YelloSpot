@@ -5,6 +5,7 @@ import {
   HashRouter
 } from "react-router-dom";
 import Navbar from "./Components/navbar"
+import Footer from "./Components/footer"
 import Section from "./Components/section"
 import Home from "./home";
 import About from "./about";
@@ -68,6 +69,7 @@ class Main extends Component {
                 dark={true}
                 id="contact">
             </Section>
+            <Footer />
             {/* <div className="content">
                 <Route exact path="/" component={Home}/>
                 <Route path="/about" component={About}/>
