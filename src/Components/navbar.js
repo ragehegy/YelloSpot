@@ -1,10 +1,10 @@
-import { render } from "@testing-library/react";
+// import { render } from "@testing-library/react";
 import React, {Component} from "react"
 import {Link, animateScroll as scroll} from "react-scroll"
-import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll"
+// import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll"
 import logo from "../images/logo.png"
 
-export default class Navbar extends Component{
+class Navbar extends Component{
     scrollToTop = ()=> {
         scroll.scrollToTop();
     };
@@ -123,3 +123,5 @@ export default class Navbar extends Component{
         );
     }
 }
+
+export default Navbar;
