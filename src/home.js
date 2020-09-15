@@ -1,28 +1,28 @@
 import React, { Component } from "react";
- 
+import Carousel from 'react-bootstrap/Carousel'
+
 class Home extends Component {
   render() {
     return (
       <div>
-        <div id="home" class="home-parallax">
-      <div class="home-text-wrapper">
-      
-          <div class="home-logo-text">
-            <a href="#about">Welcome to YelloSpot</a>
-          </div>                
-           <div id="home-slider" class="flexslider">			
-                <ul class="slides styled-list">
-                
-                <li class="home-slide"><p class="home-slide-content">We are a bunch of <span class="highlight">Digital</span> Fanatics</p></li>
-                
-                <li class="home-slide"><p class="home-slide-content">We are <span class="highlight">crazy</span> Marketers</p></li>
-                
-                <li class="home-slide"><p class="home-slide-content">We <span class="highlight">love</span> Rock N' Roll</p></li>
-                
-                </ul>
-           </div>
+        <div id="home" className="">
+          <div className="home-text-wrapper">   
+          <Carousel>
+              <Carousel.Item>
+                <p className="home-slide-content">We are a bunch of <span className="highlight">Digital</span> Fanatics
+                  </p>
+              </Carousel.Item>
+              <Carousel.Item>
+                <p className="home-slide-content">We are <span className="highlight">crazy</span> Marketers
+                  </p>
+              </Carousel.Item>
+              <Carousel.Item>
+              <p className="home-slide-content">We <span className="highlight">love</span> Rock N' Roll
+                  </p>
+              </Carousel.Item>
+            </Carousel>
+          </div>
         </div>
-     </div>
       </div>
     );
   }

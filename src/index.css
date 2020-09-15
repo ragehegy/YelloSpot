@@ -203,10 +203,10 @@ body #load {
 }
 h1 {
 	font-family: 'Roboto', sans-serif;
-	font-size: 80px;
+	font-size: 3rem;
 	text-transform: uppercase;
 	position: relative;
-	margin-bottom: 0px;
+	/* margin-bottom: 0px; */
 }
 h2 {
 	font-family: 'Roboto', sans-serif;
@@ -395,9 +395,9 @@ nav.light .main-menu li.active a, nav.dark .main-menu li.active a {
 /*	HOME 2 STYLING
 /*-----------------------------------------------------------------------------------*/
 
-.home-slide .home-slide-content {
+.home-slide-content {
 	font-family: 'Roboto', sans-serif;
-	font-size: 90px;
+	font-size: 5vw;
 	text-transform: uppercase;
 	position: relative;
 	margin-bottom: 0px;
@@ -580,6 +580,7 @@ p.quote {
 	text-transform: uppercase;
 	z-index: 200;
 	margin: 0 5%;
+	position: relative;
 }
 .quote i {
 	font-size: 25px;
@@ -841,7 +842,7 @@ p.quote {
 	font-size: 60px;
 }
 .home-logo, .home-logo-text {
-	margin: 30px 0 100px;
+	margin: 22vh 0;
 	position: relative;
 	display: block;
 	text-align: center;
@@ -853,7 +854,7 @@ p.quote {
 }
 .home-logo-text a {
 	font-family: 'Roboto', sans-serif;
-	font-size: 60px;
+	font-size: 2.3rem;
 	text-transform: uppercase;
 	position: relative;
 	margin-bottom: 0px;
@@ -863,6 +864,16 @@ p.quote {
 	border: 5px solid;
 	color: inherit;
 }
+#home h1 {
+    line-height: 0.8;
+    margin-bottom: 20px;
+    line-height: 5rem;
+    display: inline-block;
+    padding: 10px 10px 3px;
+    /* background: #FFD600; */
+    /* color: #fff; */
+    border: 4px solid #000000;
+    /* box-shadow: 0px 0px 0px 3px #000000;*/}
 .home-logo-text.light a {
 	color: rgba(255,255,255,0.9);
 }
@@ -1556,12 +1567,7 @@ p.quote {
 .copyright .social-icons .social-icon {
 	display: inline-block;
 	float: none;
-	margin: 0 5px 5px 0;
-	background-color: rgba(0,0,0,0.05) !important;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	margin-bottom: 30px;
+	margin: 0 0.5rem 0;
 }
 /*=== CONTACT FORM ELEMENTS ===*/
 #contact-input {
@@ -1980,4 +1986,64 @@ width: 100%;
 --------------------------------------------------------*/
 .bg5 {
 	background-image: url(images/parallax/parallax5.jpg);
+}
+span.milestone-count.highlight {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.container .one-third.column {
+    width: 300px;
+}
+.container .column, .container .columns {
+    float: left;
+    display: inline;
+    margin:0 auto;
+}
+.service-features .img-container {
+    padding: 25px 45px;
+    border-radius: 3px;
+    background: #FFD600;
+    width: 120px;
+    margin: 1rem auto;
+	position: relative;
+}
+.service-features .img-container:after {
+    content: '';
+    position: absolute;
+    width: 23px;
+    height: 0;
+    border: 10px solid #ffd600;
+    border-bottom: 0px solid transparent !important;
+    border-right: 1px solid transparent !important;
+    border-left: 20px solid transparent !important;
+    left: 50%;
+    bottom: -5px;
+    margin-left: -20px;
+}
+.card{
+	width: auto;
+	min-width: 30%;
+	margin-bottom: 1rem!important;
+}
+.card:hover{
+	background: #fed400;
+}
+.service-box .service-icon {
+    width: fit-content;
+    height: auto;
+    font-size: 2rem;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+    display: block;
+    text-align: center;
+    /* border-radius: 50%; */
+    background: #ffd600;
+    color: #ffffff;
+    border: 4px solid #ffffff;
+    box-shadow: 0px 0px 0px 3px #ffd600;
+}
+.list-group-item{
+	background-color: inherit;
 }
