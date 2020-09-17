@@ -21,7 +21,7 @@ class Footer extends Component {
                 <div className="service-features">
                   <p>
                     <strong>EGYPT</strong><br />
-                    <strong>Tel / Fax:</strong> + 20 1027333125<br />
+                    <strong>Tel / Fax:</strong> +20 238513138, + 20 1066771400<br />
                     <strong>Email Address:</strong> egypt@YelloSpot.com<br />
                     <strong>Address:</strong> 140B, Hadayek El Ahram, Kafr Nassar,<br />
                     Al Ahram, Giza, <strong>Egypt</strong>

@@ -69,6 +69,34 @@ class About extends Component {
                                             </div>
                                         </div>
                                     </div>
+                                    <hr className="border-dark" />
+                                    <div className="container my-5" align="center">  
+                                        <div className="row">
+                                            <div className="col-sm-6 my-auto">
+                                                <a href="https://www.microsoft.com/en-us/education/products/office">
+                                                    <img src={require("./images/o365.png")} width="60%" alt="MS AEP" />
+                                                </a>
+                                            </div>
+                                            <div className="col-sm-6">
+                                                <h4 className="font-weight-bold">Microsoft Office 365 Education</h4>
+                                                <p>
+                                                    <span className="highlight">
+                                                        <strong>YelloSpot </strong>
+                                                    </span> 
+                                                    offers a complete, intelligent solution, including Office 365, Windows 10, and Enterprise Mobility + Security, that empowers everyone to be creative and work together, securely.    
+                                                </p> 
+                                                <p>
+                                                <strong>Microsoft Office 365</strong> is a cloud-hosted application accessed as a service. This is known as a Software as a Service application (SaaS). The cloud is a large concept in the IT industry that encompasses numerous advantages and considerations when compared to standard deployment models.
+                                                </p>   
+                                                <p>
+                                                All <strong>Microsoft Office 365</strong> customers access the Office 365 application through their standard internet connection. Microsoft, therefore, is rendering the application as a service instead of a product.
+                                                </p>
+                                                <p>
+                                                In short, you do not own <strong>Microsoft Office 365</strong>. You subscribe to it, and that has some distinct advantages.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                     
                                 </div>
                             </div>	                           

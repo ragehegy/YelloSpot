@@ -1102,7 +1102,7 @@ p.quote {
 	padding: 0;
 	width: 100.1%;
 	margin: 0 auto;
-	display: block;
+	/* display: block; */
 }
 #portfolio-wrap .one-third {
 	margin: 0;

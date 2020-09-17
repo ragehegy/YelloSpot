@@ -8,61 +8,16 @@ class Team extends Component {
 	
 		<div className="container">	
            <div className="row">	
-			<div className="sixteen columns">            
-	            { /* START TITLE */ }	            
+			<div className="sixteen columns">          
 				<div className="title">
-				  <h1>Our Featured Portfolio</h1>
                   <div className="subtitle">
                       <p>Hire us if you like what we do because we helps Agencies to link <span className="highlight">Business</span> processes and <span className="highlight">People.</span></p>
-                  </div>{ /* END SUBTITLE */ }                  
-                </div>{ /* END TITLE */ }  	                           
-			</div>{ /* END SIXTEEN COLUMNS */ }  
-           </div>{ /* END ROW */ }         
-          </div>{ /* END CONTAINER */ }     
-   			
-           { /* START AJAX SECTION */ }  
-            <div id="ajax-section">     
-             <div className="container clearfix"> 
-
-                
-              { /* START PROJECT NAVIGATION */ } 
-              <div id="project-navigation">
-                  <ul>
-                      <li id="nextProject"><a href="#"></a></li>
-                      <li id="prevProject"><a href="#"></a></li>
-                   </ul>  
-               </div>
-               { /* END PROJECT NAVIGATION */ } 
-                
-               { /* START PROJECT CLOSE BUTTON */ }
-               <div id="closeProject">
-                    <a href="#loader"><i className="icon-remove"></i></a>               
-
-               </div>  
-               { /* START PROJECT CLOSE BUTTON */ }
-                 
-               { /* START PROJECT LOADER SECTION */ }
-               <div id="loader"></div>
-               { /* END PROJECT CLOSE BUTTON */ }
-                     
-               { /* START AJAX CONTENT */ }
-               <div id="ajax-content-outer">
-                    <div id="ajax-content-inner"></div>
-               </div>
-               { /* END AJAX CONTENT */ }
-                      
-        </div>{ /* END CONTAINER */ }
-        
-    </div>
-           { /* END AJAX SECTION */ }          
-              
-         <div className="clear"></div>  
-      
-             
-   	
-   <div className="container clearfix">  
-   
-   { /* START PORTFOLIO FILTERING */ }   
+                  </div>
+                </div>
+			</div>
+           </div>
+          </div>
+   <div className="container clearfix">
    <div  id="filters" className="sixteen columns">
 
       <ul className="clearfix">
@@ -72,197 +27,145 @@ class Team extends Component {
         <li><a href="#" data-filter=".media"><h3>Digital Media</h3></a></li>
         <li><a href="#" data-filter=".branding"><h3>Branding</h3></a></li>
       </ul>
-    </div>{ /* END PORTFOLIO FILTERING */ }    
-   </div>{ /* END CONTAINER */ } 
-   
-         
-   { /* START PORTFOLIO WRAP */ }  
-   <div id="portfolio-wrap">
-    
-    { /* START PORTFOLIO ITEM */ }                   
+    </div>
+   </div>
+   <div id="portfolio-wrap" className="row">                  
     <div className="portfolio-item one-third column web">
            <div className="portfolio">
               <a href="#" className="portfolio-image">
-                <img src={require("./images/clients/web/aul.png")} alt="AUL University"/>{ /* END PORTFOLIO IMAGE */ }   
+                <img src={require("./images/clients/web/aul.png")} alt="AUL University"/>
                 
                 <div className="portfolio-overlay">                
                     <div className="thumb-info">                
-                      <h3>AUL UNIVERSITY</h3>{ /* OVERLAY TITLE */ }  
-                      <p className="portfolio-tags">UNIVERSITY</p>{ /* END PORTFOLIO TAGS */ }
+                      <h3>AUL UNIVERSITY</h3>
+                      <p className="portfolio-tags">UNIVERSITY</p>
                     </div>                
-                </div>{ /* END PORTFOLIO OVERLAY */ } 
+                </div>
               
               </a>
            </div>
     </div>
-    { /* END PORTFOLIO ITEM */ }    
-    
-                   
-    { /* START PORTFOLIO ITEM */ }                   
     <div className="portfolio-item one-third web">
            <div className="portfolio">
-              <a href="http://www.adonisrentacar.com" className="portfolio-image" target="_blank">
-                <img src={require("./images/clients/web/adonis.png")} alt="Adonis Rent a Car"/>{ /* END PORTFOLIO IMAGE */ }   
-                
+              <a href="http://www.adonisrentacar.com" className="portfolio-image" >
+                <img src={require("./images/clients/web/adonis.png")} alt="Adonis Rent a Car"/>
                 <div className="portfolio-overlay">                
                     <div className="thumb-info">                
-                      <h3>Adonis Rent a Car</h3>{ /* OVERLAY TITLE */ }  
-                      <p className="portfolio-tags">Car Rental</p>{ /* END PORTFOLIO TAGS */ }
+                      <h3>Adonis Rent a Car</h3>
+                      <p className="portfolio-tags">Car Rental</p>
                     </div>                
-                </div>{ /* END PORTFOLIO OVERLAY */ } 
-              
+                </div>
+              </a>
+           </div>
+    </div>              
+    <div className="portfolio-item one-third column web">
+           <div className="portfolio">
+              <a href="http://www.ammourifoods.com" className="portfolio-image" >
+                <img src={require("./images/clients/web/ammouri.png")} alt="Ammouri Foods"/>
+                <div className="portfolio-overlay">                
+                    <div className="thumb-info">                
+                      <h3>Ammouri Foods</h3>
+                      <p className="portfolio-tags">Snacks Manufacturer</p>
+                    </div>                
+                </div>
               </a>
            </div>
     </div>
-    { /* END PORTFOLIO ITEM */ } 
-       
-    { /* START PORTFOLIO ITEM */ }                   
     <div className="portfolio-item one-third column web">
            <div className="portfolio">
-              <a href="http://www.ammourifoods.com" className="portfolio-image" target="_blank">
-                <img src={require("./images/clients/web/ammouri.png")} alt="Ammouri Foods"/>{ /* END PORTFOLIO IMAGE */ }   
-                
-                <div className="portfolio-overlay">                
-                    <div className="thumb-info">                
-                      <h3>Ammouri Foods</h3>{ /* OVERLAY TITLE */ }  
-                      <p className="portfolio-tags">Snacks Manufacturer</p>{ /* END PORTFOLIO TAGS */ }
-                    </div>                
-                </div>{ /* END PORTFOLIO OVERLAY */ } 
-              
-              </a>
-           </div>
-    </div>
-    { /* END PORTFOLIO ITEM */ }
-       
-    { /* START PORTFOLIO ITEM */ }                   
-    <div className="portfolio-item one-third column web">
-           <div className="portfolio">
-              <a href="http://www.skycarecatering.com" className="portfolio-image" target="_blank">
+              <a href="http://www.skycarecatering.com" className="portfolio-image" >
                 <img src={require("./images/clients/web/skycare.png")} alt="Sky Care Catering"/>{ /* END PORTFOLIO IMAGE */ }   
                 
                 <div className="portfolio-overlay">                
                     <div className="thumb-info">                
-                      <h3>Sky Care Catering</h3>{ /* OVERLAY TITLE */ }  
-                      <p className="portfolio-tags">Flight Services Catering</p>{ /* END PORTFOLIO TAGS */ }
+                      <h3>Sky Care Catering</h3>
+                      <p className="portfolio-tags">Flight Services Catering</p>
                     </div>                
-                </div>{ /* END PORTFOLIO OVERLAY */ } 
-              
+                </div>
               </a>
            </div>
     </div>
-    { /* END PORTFOLIO ITEM */ }
-       
-    { /* START PORTFOLIO ITEM */ }                   
     <div className="portfolio-item one-third column web">
            <div className="portfolio">
-              <a href="http://www.fitnfresh.co" className="portfolio-image" target="_blank">
-                <img src={require("./images/clients/web/fitnfresh.png")} alt="Fit N Fresh"/>{ /* END PORTFOLIO IMAGE */ }   
-                
+              <a href="http://www.fitnfresh.co" className="portfolio-image" >
+                <img src={require("./images/clients/web/fitnfresh.png")} alt="Fit N Fresh"/>
                 <div className="portfolio-overlay">                
                     <div className="thumb-info">                
-                      <h3>Fit N Fresh</h3>{ /* OVERLAY TITLE */ }  
-                      <p className="portfolio-tags">Food Delivery Service</p>{ /* END PORTFOLIO TAGS */ }
+                      <h3>Fit N Fresh</h3>
+                      <p className="portfolio-tags">Food Delivery Service</p>
                     </div>                
-                </div>{ /* END PORTFOLIO OVERLAY */ } 
-              
+                </div>
               </a>
            </div>
-    </div>
-    { /* END PORTFOLIO ITEM */ }
-       
-    { /* START PORTFOLIO ITEM */ }                   
+    </div>              
     <div className="portfolio-item one-third column web">
            <div className="portfolio">
-              <a href="http://www.adoprojects.com" className="portfolio-image" target="_blank">
+              <a href="http://www.adoprojects.com" className="portfolio-image" >
                 <img src={require("./images/clients/web/ado.png")} alt="Ado Projects"/>{ /* END PORTFOLIO IMAGE */ }   
                 
                 <div className="portfolio-overlay">                
                     <div className="thumb-info">                
-                      <h3>Ado Projects</h3>{ /* OVERLAY TITLE */ }  
-                      <p className="portfolio-tags">Architectural & Design Offices</p>{ /* END PORTFOLIO TAGS */ }
+                      <h3>Ado Projects</h3>
+                      <p className="portfolio-tags">Architectural & Design Offices</p>
                     </div>                
-                </div>{ /* END PORTFOLIO OVERLAY */ } 
-              
+                </div>
               </a>
            </div>
-    </div>
-    { /* END PORTFOLIO ITEM */ }
-       
-    { /* START PORTFOLIO ITEM */ }                   
+    </div>                
     <div className="portfolio-item one-third column web">
            <div className="portfolio">
-              <a href="http://www.jstelb.com" className="portfolio-image" target="_blank">
-                <img src={require("./images/clients/web/jste.png")} alt="JSTE"/>{ /* END PORTFOLIO IMAGE */ }   
+              <a href="http://www.jstelb.com" className="portfolio-image" >
+                <img src={require("./images/clients/web/jste.png")} alt="JSTE"/>
+                <div className="portfolio-overlay">                
+                    <div className="thumb-info">                
+                      <h3>JSTE</h3>
+                      <p className="portfolio-tags">Tyres Leading Agent</p>
+                    </div>                
+                </div>
+              </a>
+           </div>
+    </div>             
+    <div className="portfolio-item one-third column web">
+           <div className="portfolio">
+              <a href="http://www.adcosal.com" className="portfolio-image" >
+                <img src={require("./images/clients/web/adco.png")} alt="Adco"/>
                 
                 <div className="portfolio-overlay">                
                     <div className="thumb-info">                
-                      <h3>JSTE</h3>{ /* OVERLAY TITLE */ }  
-                      <p className="portfolio-tags">Tyres Leading Agent</p>{ /* END PORTFOLIO TAGS */ }
+                      <h3>Adco SAL</h3>
+                      <p className="portfolio-tags">Solutions & Services</p>
                     </div>                
-                </div>{ /* END PORTFOLIO OVERLAY */ } 
-              
+                </div>
               </a>
            </div>
     </div>
-    { /* END PORTFOLIO ITEM */ }
-       
-    { /* START PORTFOLIO ITEM */ }                   
     <div className="portfolio-item one-third column web">
            <div className="portfolio">
-              <a href="http://www.adcosal.com" className="portfolio-image" target="_blank">
-                <img src={require("./images/clients/web/adco.png")} alt="Adco"/>{ /* END PORTFOLIO IMAGE */ }   
-                
+              <a href="#" className="portfolio-image" >
+                <img src={require("./images/clients/web/lestudio.png")} alt="Le Studio"/>
                 <div className="portfolio-overlay">                
                     <div className="thumb-info">                
-                      <h3>Adco SAL</h3>{ /* OVERLAY TITLE */ }
-                      <p className="portfolio-tags">Solutions & Services</p>{ /* END PORTFOLIO TAGS */ }
+                      <h3>Le Studio</h3>
+                      <p className="portfolio-tags">Music House</p>
                     </div>                
-                </div>{ /* END PORTFOLIO OVERLAY */ } 
-              
+                </div>
               </a>
            </div>
     </div>
-    { /* END PORTFOLIO ITEM */ }
-       
-    { /* START PORTFOLIO ITEM */ }                   
-    <div className="portfolio-item one-third column web">
-           <div className="portfolio">
-              <a href="#" className="portfolio-image" target="_blank">
-                <img src={require("./images/clients/web/lestudio.png")} alt="Le Studio"/>{ /* END PORTFOLIO IMAGE */ }   
-                
-                <div className="portfolio-overlay">                
-                    <div className="thumb-info">                
-                      <h3>Le Studio</h3>{ /* OVERLAY TITLE */ }
-                      <p className="portfolio-tags">Music House</p>{ /* END PORTFOLIO TAGS */ }
-                    </div>                
-                </div>{ /* END PORTFOLIO OVERLAY */ } 
-              
-              </a>
-           </div>
-    </div>
-    { /* END PORTFOLIO ITEM */ }
-       
-    { /* START PORTFOLIO ITEM */ }                   
     <div className="portfolio-item one-third column media">
            <div className="portfolio">
-              <a href="#" className="portfolio-image" target="_blank">
-                <img src={require("./images/clients/web/lestudio.png")} alt="Le Studio"/>{ /* END PORTFOLIO IMAGE */ }   
-                
+              <a href="#" className="portfolio-image" >
+                <img src={require("./images/clients/web/lestudio.png")} alt="Le Studio"/>
                 <div className="portfolio-overlay">                
                     <div className="thumb-info">                
-                      <h3>Le Studio</h3>{ /* OVERLAY TITLE */ }
-                      <p className="portfolio-tags">Music House</p>{ /* END PORTFOLIO TAGS */ }
+                      <h3>Le Studio</h3>
+                      <p className="portfolio-tags">Music House</p>
                     </div>                
-                </div>{ /* END PORTFOLIO OVERLAY */ } 
-              
+                </div>
               </a>
            </div>
     </div>
-    { /* END PORTFOLIO ITEM */ }   
-             
    </div>
-   { /* END PORTFOLIO WRAPPER */ }
-		
 	</div>
 	
       </div>

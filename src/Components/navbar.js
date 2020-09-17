@@ -1,127 +1,57 @@
-// import { render } from "@testing-library/react";
 import React, {Component} from "react"
-import {Link, animateScroll as scroll} from "react-scroll"
-// import { scrollToTop } from "react-scroll/modules/mixins/animate-scroll"
+// import {Link, animateScroll as scroll} from "react-scroll"
+import {Navbar, Nav} from 'react-bootstrap'
 import logo from "../images/logo.png"
 
-class Navbar extends Component{
-    scrollToTop = ()=> {
-        scroll.scrollToTop();
-    };
+class YelloNav extends Component{
+    // scrollToTop = ()=> {
+    //     scroll.scrollToTop();
+    // };
 
     render(){
         return(
-            <nav className="nav header light sticky-nav navigation" id="navbar">
-                <div className="nav-content">
-                    <img
-                        src={logo}
-                        className="nav-logo"
-                        alt="Logo"
-                        onClick={this.scrollToTop}
-                        width="40" height="40"
-                    />
-                    <ul className="nav-items nav">
-                        <li className="nav-item">
-                        <Link
-                            activeClass="active"
-                            to="home"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
+            <Navbar collapseOnSelect expand="lg" bg="light" sticky="top">
+                <Navbar.Brand href="#home">
+                <img
+                    src={logo}
+                    width="50"
+                    height="50"
+                    className="d-inline-block align-top"
+                    alt="React Bootstrap logo"
+                />
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="ml-auto">
+                        <Nav.Link href="#home">
                             Home
-                        </Link>
-                        </li>
-                        <li className="nav-item">
-                        <Link
-                            activeClass="active"
-                            to="about"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
+                        </Nav.Link>
+                        <Nav.Link href="#about">
                             About
-                        </Link>
-                        </li>
-                        <li className="nav-item">
-                        <Link
-                            activeClass="active"
-                            to="whatWeDo"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
+                        </Nav.Link>
+                        <Nav.Link href="#whatWeDo">
                             What We Do
-                        </Link>
-                        </li>
-                        <li className="nav-item">
-                        <Link
-                            activeClass="active"
-                            to="services"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
+                        </Nav.Link>
+                        <Nav.Link href="#services">
                             Services
-                        </Link>
-                        </li>
-                        <li className="nav-item">
-                        <Link
-                            activeClass="active"
-                            to="portfolio"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
+                        </Nav.Link>
+                        <Nav.Link href="#portfolio">
                             Portfolio
-                        </Link>
-                        </li>
-                        <li className="nav-item">
-                        <Link
-                            activeClass="active"
-                            to="team"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
+                        </Nav.Link>
+                        <Nav.Link href="#team">
                             Team
-                        </Link>
-                        </li>
-                        <li className="nav-item">
-                        <Link
-                            activeClass="active"
-                            to="careers"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
+                        </Nav.Link>
+                        <Nav.Link href="#careers">
                             Careers
-                        </Link>
-                        </li>
-                        <li className="nav-item">
-                        <Link
-                            activeClass="active"
-                            to="contact"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                        >
+                        </Nav.Link>
+                        <Nav.Link href="#contact">
                             Contact
-                        </Link>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                        </Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
         );
     }
 }
 
-export default Navbar;
+export default YelloNav;
