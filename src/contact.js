@@ -5,6 +5,32 @@ import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 
 class Contact extends Component {
+  constructor(props) {
+    super();
+    this.state = { 
+      name: '', 
+      phone: '', 
+      email: '', 
+      subject: '', 
+      message: ''};
+  }
+
+  handleChange = (event) => {
+    this.setState({[event.target.name]: event.target.value});
+  }
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+    fetch('contact.php', {
+      method: 'POST',
+        // We convert the React state to JSON and send it as the POST body
+        body: JSON.stringify(this.state)
+    }).then(function(response) {
+      console.log(response)
+      return response.json();
+    });
+  }
+
   render() {
     return (
       <div>
@@ -26,14 +52,14 @@ class Contact extends Component {
             <div className="container">
               <div className="contact-box">
                 <div id="contact-formm">		
-                <Form className="row">
+                <Form className="row" onSubmit={this.handleSubmit}>
                   <div className="col-sm-6">
                     <Form.Group as={Row} controlId="formPlaintext">
                       <Form.Label column sm="2">
                         Name
                       </Form.Label>
                       <Col sm="10">
-                        <Form.Control placeholder="John Doe" />
+                        <Form.Control  onChange={this.handleChange} name="name" placeholder="John Doe" />
                       </Col>
                     </Form.Group>
                     <Form.Group as={Row} controlId="formPlaintextEmail">
@@ -41,7 +67,7 @@ class Contact extends Component {
                         Email
                       </Form.Label>
                       <Col sm="10">
-                        <Form.Control placeholder="email@example.com" />
+                        <Form.Control  onChange={this.handleChange} name="email" placeholder="email@example.com" />
                       </Col>
                     </Form.Group>
                     <Form.Group as={Row} controlId="formPlaintextPhone">
@@ -49,7 +75,7 @@ class Contact extends Component {
                         Phone
                       </Form.Label>
                       <Col sm="10">
-                        <Form.Control placeholder="+201111111111" />
+                        <Form.Control  onChange={this.handleChange} name="phone" placeholder="+201111111111" />
                       </Col>
                     </Form.Group>
                   </div>
@@ -59,7 +85,7 @@ class Contact extends Component {
                         Subject
                       </Form.Label>
                       <Col sm="10">
-                        <Form.Control placeholder="Subject" />
+                        <Form.Control  onChange={this.handleChange} name="subject" placeholder="Subject" />
                       </Col>
                     </Form.Group>
                     <Form.Group as={Row} controlId="formPlainTextarea">
@@ -67,7 +93,7 @@ class Contact extends Component {
                         Message
                       </Form.Label>
                       <Col sm="10">
-                        <Form.Control as="textarea" rows="3" placeholder="Lorem ipsum dolor sit amet, consectetuer adipiscing elit..." />
+                        <Form.Control  onChange={this.handleChange}  name="message" as="textarea" rows="3" placeholder="Lorem ipsum dolor sit amet, consectetuer adipiscing elit..." />
                       </Col>
                     </Form.Group>
                   </div>

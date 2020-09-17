@@ -343,9 +343,6 @@ nav.light .main-menu a:hover, nav.dark .main-menu a:hover {
 	-webkit-transition: color 0.5s;
 	-o-transition: color 0.5s;
 }
-nav.light .main-menu li.active a, nav.dark .main-menu li.active a {
-	color: #FFD600;
-}
 .main-menu a i {
 	margin-right: 3px;
 	font-size: 22px;
@@ -2051,4 +2048,18 @@ span.milestone-count.highlight {
 }
 .list-group{
 	padding: 0 7%;
+}
+
+nav.light .main-menu li.active a, nav.dark .main-menu li.active a {
+	color: #FFD600;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+	color: rgb(255 214 0);
+    font-weight: bold;
+    border-bottom: 1px solid rgb(255 214 0);
+}
+.nav-link:hover{
+	color: rgb(255 214 0)!important;
+    font-weight: bold;
+    /* border-bottom: 1px solid rgb(255 214 0); */
 }
